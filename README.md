@@ -1,7 +1,7 @@
 # Django - Template de Projeto
 
 
-## Iniciando um projeto Django
+### Iniciando um projeto Django
 
 ```bash
 $ pip install django
@@ -10,7 +10,7 @@ $ cd miniframework
 $ python manage.py startapp pessoas
 ```
 
-## Editando `pessoas/models.py`
+### Editando `pessoas/models.py`
 
 ```python
 from django.db import models
@@ -27,7 +27,7 @@ class DadosBasicos(models.Model):
         verbose_name_plural = 'dados'
 ```
 
-## Editando `pessoas/admin.py`
+### Editando `pessoas/admin.py`
 
 ```python
 from django.contrib import admin
@@ -41,7 +41,7 @@ class PessoasAdmin(admin.ModelAdmin):
 admin.site.register(DadosBasicos, PessoasAdmin)
 ```
 
-## Editando `settings.py`
+### Editando `settings.py`
 
 ```python
 
@@ -53,14 +53,14 @@ INSTALLED_APPS = [
 ]
 ```
 
-## Executando `migrations`
+### Executando `migrations`
 
 ```bash
 $ python manage.py makemigrations
 $ python manage.py migrate
 ```
 
-## Rodando o projeto
+### Rodando o projeto
 
 ```bash
 $ python manage.py runserver
